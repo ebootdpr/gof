@@ -106,7 +106,7 @@ function leyDeInercia(listaXY) {
 setInterval(update, 10)
 
 
-crearParticulasXYrandom(60)
+crearParticulasXYrandom(100)
 listaDeMasas[4]=1000
 listaParticulasVelocidades[4]=0
 listaParticulasVelocidades[5]=0
@@ -114,7 +114,7 @@ listaParticulas[4]=anchuraGrafico/2
 listaParticulas[5]=alturaGrafico/2
 function update() {
     borrarPantalla()
-    rule(listaParticulas, listaParticulasVelocidades, 1, 1.2,1,1500)
+    rule(listaParticulas, listaParticulasVelocidades, 1, 1.2,11,300)
     leyDeInercia(listaParticulas)
     dibujarParticulas(listaParticulas, 'red')
 
