@@ -25,10 +25,10 @@ function dibujarParticulas(listaXY, color) {
     grafico.fillStyle = color
     for (let i = 0; i < listaXY.length; i += 2) {
         if(i===4){
-            grafico.fillRect(listaXY[4], listaXY[5], 6, 6)
+            grafico.fillRect(Math.floor(listaXY[4]), Math.floor(listaXY[5]), 6, 6)
         }
         else{
-        grafico.fillRect(listaXY[i], listaXY[i + 1], 2, 2)
+        grafico.fillRect(Math.floor(listaXY[i]), Math.floor(listaXY[i + 1]), 2, 2)
         }
     }
 }
