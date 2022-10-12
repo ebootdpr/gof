@@ -106,8 +106,8 @@ function leyDeInercia(listaXY) {
 setInterval(update, 10)
 
 
-crearParticulasXYrandom(122)
-listaDeMasas[4]=4000
+crearParticulasXYrandom(60)
+listaDeMasas[4]=1000
 listaParticulasVelocidades[4]=0
 listaParticulasVelocidades[5]=0
 listaParticulas[4]=anchuraGrafico/2
