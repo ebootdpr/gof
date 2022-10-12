@@ -114,7 +114,7 @@ listaParticulas[4]=anchuraGrafico/2
 listaParticulas[5]=alturaGrafico/2
 function update() {
     borrarPantalla()
-    rule(listaParticulas, listaParticulasVelocidades, 11, 1.2,1,300)
+    rule(listaParticulas, listaParticulasVelocidades, 1, 1.2,1,500)
     leyDeInercia(listaParticulas)
     dibujarParticulas(listaParticulas, 'red')
 
