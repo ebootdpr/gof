@@ -25,10 +25,10 @@ function dibujarParticulas(listaXY, color) {
     grafico.fillStyle = color
     for (let i = 0; i < listaXY.length; i += 2) {
         if(i===4){
-            grafico.fillRect(Math.floor(listaXY[4]), Math.floor(listaXY[5]), 6, 6)
+            grafico.fillRect(Math.round(listaXY[4]), Math.round(listaXY[5]), 6, 6)
         }
         else{
-        grafico.fillRect(Math.floor(listaXY[i]), Math.floor(listaXY[i + 1]), 2, 2)
+        grafico.fillRect(Math.round(listaXY[i]), Math.round(listaXY[i + 1]), 1, 1)
         }
     }
 }
@@ -114,7 +114,7 @@ listaParticulas[4]=anchuraGrafico/2
 listaParticulas[5]=alturaGrafico/2
 function update() {
     borrarPantalla()
-    rule(listaParticulas, listaParticulasVelocidades, 1, 1.2,11,300)
+    rule(listaParticulas, listaParticulasVelocidades, 1, 1.2,21,600)
     leyDeInercia(listaParticulas)
     dibujarParticulas(listaParticulas, 'red')
 
